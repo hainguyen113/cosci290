@@ -1,6 +1,6 @@
 //Hai Nguyen
 //CoSci 290
-
+//123
 import java.util.Scanner;
 public class GameRpg{
   public static void main(String[] args){
@@ -8,6 +8,7 @@ public class GameRpg{
     String name = " ";
     String survivors = " ";
     int age = 0;
+    
     
     Scanner input = new Scanner(System.in);
     System.out.println("How Many Survivors Are With You?");

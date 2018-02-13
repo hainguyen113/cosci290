@@ -1,6 +1,6 @@
 //Hai Nguyen
 //cosci 290
-//testing out ways to make this game
+//testing out ways to make this game not working>???
 import java.util.Scanner;
 import java.util.Random;
 
