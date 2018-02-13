@@ -10,14 +10,12 @@ public class GameRpg{
     int age = 0;
     
     Scanner input = new Scanner(System.in);
-    System.out.println("How Many Survivors Are With You?");
-    survivors = input.next();
     System.out.println("Hello What Is Your Character's Name?");
     name = input.next();
     System.out.println("How Old Is your Character?");
-    age = input.nextInt();
+    age = input.nextInt(); System.out.println("How Many Survivors Are With You?");
+    survivors = input.next();
     System.out.println("Welcome " + name + " To....");
-    
     System.out.println(                                         
                         "     @@@@@@    @@@@@@@  @@@          @@@@@@@@  @@@  \n"
                       + "    @@@@@@@   @@@@@@@@  @@@          @@@@@@@@  @@@  \n"
