@@ -2,7 +2,7 @@
 //CoSci 290
 
 import java.util.Scanner;
-public class GameRpg{
+public class LabInput{
   public static void main(String[] args){
     
     String name = " ";
@@ -33,8 +33,8 @@ public class GameRpg{
                       + "    :::: ::    ::: :::   ::           ::        ::  \n"
                       + "    :: : :     :: :: :    :            :         :   ");
     
-    System.out.println(name + "You and the remaining " + survivors + " survivors head in separate directions." 
-                       + "Your Dog " namePet + "Start your adventure.");
+    System.out.println(name + " You and the remaining " + survivors + " survivors head in separate directions." 
+                       + "Your Dog " + namePet + " Start your adventure.");
     
                       
   }
