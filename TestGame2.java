@@ -4,7 +4,7 @@
 import java.util.Scanner;
 import java.util.Random;
 
-public class TestGame{
+  public class TestGame2{
     
   public static void main(String[] args) {
     
