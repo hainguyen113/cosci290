@@ -29,7 +29,8 @@ public class GameRpg{
                       + "         !:!  :!!       !!:          !!:       !!:  \n"
                       + "        !:!   :!:       :!:          :!:       :!:  \n"
                       + "    :::: ::    ::: :::   ::           ::        ::  \n"
-                      + "    :: : :     :: :: :    :            :         :   ");
+                      + "    :: : :     :: :: :    :            :         :  \n"
+                      + " \n\n\n);
     
     System.out.println(name + "You and the remaining " + survivors + " survivors head in separate directions.");
     

@@ -1,0 +1,92 @@
+/* Hai Nguyen
+   CoSci290
+   HW 2/15/2018
+*/
+
+import java.util.Scanner;
+
+//Demo HW1
+public class GameDriver{
+  //start of the application
+  public static void main(String[] args){
+    //variable name/decloration assignment expression
+    Scanner input = new Scanner(System.in); 
+    int survivors = 0;
+    String name = "";
+    String name2 = "Sally";
+    String namePet = "";
+    int randomNum = 0;
+    int minimum = 1;
+    int maximum = 10;
+    
+    
+      
+    //Splash Screen
+    System.out.println("-------------------------------------------------------------\n\n");
+    System.out.println(                                         
+                        "     @@@@@@    @@@@@@@  @@@          @@@@@@@@  @@@  \n"
+                      + "    @@@@@@@   @@@@@@@@  @@@          @@@@@@@@  @@@  \n"
+                      + "    !@@       !@@       @@!          @@!       @@!  \n"
+                      + "    !@!       !@!       !@!          !@!       !@!  \n"
+                      + "    !!@@!!    !@!       !!@  @!@!@!  @!!!:!    !!@  \n"
+                      + "     !!@!!!   !!!       !!!  !@!@!@  !!!!!:    !!!  \n"
+                      + "         !:!  :!!       !!:          !!:       !!:  \n"
+                      + "        !:!   :!:       :!:          :!:       :!:  \n"
+                      + "    :::: ::    ::: :::   ::           ::        ::  \n"
+                      + "    :: : :     :: :: :    :            :         :  \n\n\n");
+    
+    
+//story setup
+    System.out.println("You wake up in a room groggy and disorented. There is another person with you.");
+    System.out.println("The person looks at you and asks your name?");
+    name = input.next();//character name input
+    System.out.println("My Name... oh my name is " + name + ". What's Your's?");
+    System.out.println("She looks no older then 12 she says her name is...  \nWhat is her name again?");
+    name2 = input.next();//npc name input
+    System.out.println(name2 + " you hear her say.");
+    System.out.println("You ask her where you were.");
+    System.out.println("She looks just as confused as you are and says she was hoping you could tell her.");
+    System.out.println("Just then you to see a door and are able to open it to see outside");
+    System.out.println("She asks you Can you see anyone? ");
+    System.out.println("Tell her how many people can you see?");
+    survivors = input.nextInt();//anyone else around
+    //if else statemant
+    if(survivors >= 1){
+      System.out.println("Yeah I see somthing about " + survivors + " or so moving shadows.");
+    }
+    else{
+      System.out.println("I dont see anyone.");
+    }
+    System.out.println("You pause for a moment and say I see a dog comming.");
+    System.out.println("The little girl says it is hers and tells you its name.");
+    System.out.println("You try to remember the dogs name. What was it again?");
+    namePet = input.next();//playing with inputs
+    System.out.println("Oh yeah it is " + namePet + ".");
+    System.out.println("You walk out with " + name2 + " and her dog " + namePet + " to see if you can find anyone "
+                      + "that has any answers to your questions.");
+    System.out.println("\n\n\n The light fades away as you and " + name2 + " and " + namePet +" head out to find anyone.");
+    //random number generator
+    randomNum = minimum + (int)(Math.random() * (maximum - minimum));
+    //System.out.println(randomNum); //testing to see if randomNum gen is working
+    
+    //live or die?
+    if(randomNum > 3 ){
+      System.out.println("You and " + name2 + " find a group heading home, You're SAVED!!!");
+    }
+    else if(randomNum <=3){
+      System.out.println("As you walk with " + name2 + " you begin to notice her eyes glowing red "
+                        + " you also see her floating as she screams your name" + name + "\n You "
+                        + " will never escape my grasp!!!!");
+      
+     
+    }
+        System.out.println(" _______  _______  __   __  _______    _______  __   __  _______  ______    __  \n"
+                     + "|       ||   _   ||  |_|  ||       |  |       ||  | |  ||       ||    _ |  |  | \n"
+                     + "|    ___||  |_|  ||       ||    ___|  |   _   ||  |_|  ||    ___||   | ||  |  | \n"
+                     + "|   | __ |       ||       ||   |___   |  | |  ||       ||   |___ |   |_||_ |  | \n"
+                     + "|   ||  ||       ||       ||    ___|  |  |_|  ||       ||    ___||    __  ||__| \n"
+                     + "|   |_| ||   _   || ||_|| ||   |___   |       | |     | |   |___ |   |  | | __  \n"
+                     + "|_______||__| |__||_|   |_||_______|  |_______|  |___|  |_______||___|  |_||__| \n");
+    }
+    
+  }
