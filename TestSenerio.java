@@ -12,7 +12,7 @@ public class TestSenerio
 
   public static void main(String[] args)
   {
-  
+  //decalre datatype 
     int minimum = 1;
     int maximum = 100;
     int randomNum = minimum + (int)(Math.random() * maximum);
@@ -40,5 +40,7 @@ public class TestSenerio
     {
       System.out.println("You do not find anything in this area.");
     }
+      
+      System.out.println("You Rolled An " + randomNum);
   }
 }
