@@ -38,7 +38,7 @@ public class TestSenerio
     }
     else
     {
-      System.out.println("You Do not find anything in this area.");
+      System.out.println("You do not find anything in this area.");
     }
   }
 }
