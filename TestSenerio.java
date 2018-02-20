@@ -17,7 +17,7 @@ public class TestSenerio
     int maximum = 100;
     int randomNum = minimum + (int)(Math.random() * maximum);
     
-    if(randomNum >= 90)
+    if(randomNum > 80)
     {
       System.out.println("You found some food!");  
     }
@@ -27,7 +27,7 @@ public class TestSenerio
     }
     else if(randomNum < 30 && randomNum >= 20)
     {
-      System.out.println("You found the key to escape!");
+      System.out.println("You found the keys to the car escape!");
     }
     else if(randomNum < 20 && randomNum >= 15)
     {
@@ -38,7 +38,7 @@ public class TestSenerio
     }
     else
     {
-      System.out.println("Nothing is here.");
+      System.out.println("You Do not find anything in this area.");
     }
   }
 }
