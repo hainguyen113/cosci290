@@ -58,6 +58,8 @@ import java.util.Random;
           System.out.println("\t> You Did " + damageDealt + " Damage To " + enemy + "!");
           System.out.println("\t> You Received " + damageTaken + " Damage From " + enemy 
                              + "!");
+          System.out.println("Press Enter Key to Continue.");
+          
          if(health < 1) {
            System.out.println("\n\t You Are Dead!!");
           break;
@@ -103,6 +105,7 @@ import java.util.Random;
         
       }
       System.out.println("\t What Do You Want To Do");
+      System.out.println("\tYou have " + health + " HP and " + numHealthPotion + " Potions.");
       System.out.print("\t1. Continue");
       System.out.print("\t2. End \n");
       
