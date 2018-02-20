@@ -22,7 +22,7 @@ import java.util.Random;
     int attackDamage = 50;
     int numHealthPotion = 3;
     int healthPotionHealAmount = 30;
-    int healthPotionDropRate = 100; //100% drop rate
+    int healthPotionDropRate = 75; //75% drop rate
     
     boolean running = true;
     
@@ -64,7 +64,7 @@ import java.util.Random;
          }  
         }
         else if(input.equals("2")) {
-          if(numHealthPotion > 1) {
+          if(numHealthPotion > 0) {
             health += healthPotionHealAmount;
             numHealthPotion--;
             
@@ -96,7 +96,7 @@ import java.util.Random;
       }
       System.out.println("\n____________________________________________\n");
       System.out.println("\t #  You defeated " + enemy + "!  # ");
-      if(rand.nextInt(100) > healthPotionDropRate) {
+      if(rand.nextInt(100) < healthPotionDropRate) {
         numHealthPotion++;
         System.out.println("The Enemy " + enemy + " Dropped Health Potions. You now have " 
                            + numHealthPotion + " Potions\n");
