@@ -63,7 +63,7 @@
             for(!Character.isLetter(answer.charAt(index)))
             {//if not a letter
               flag = true;
-              break; //gets you out of the loop
+              //break; //gets you out of the loop
             }
           }
          
