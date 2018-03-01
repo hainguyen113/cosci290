@@ -15,11 +15,10 @@ public class Lab6
     String item;
     int num = 0;
     
-   
     System.out.println("Please chose a number between 0 - 9");
     System.out.print("> ");
     num = input.nextInt();
-    
+  
     System.out.println("Please enter your item name");
     System.out.print("> ");
     item = input.next();
