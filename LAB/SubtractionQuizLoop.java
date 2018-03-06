@@ -18,8 +18,8 @@ public class SubtractionQuizLoop
     while(count < NUMBER_OF_QUESTIONS)
     {
       //generate 2 random single digit integers
-      int number1 = (int)(Math.random() * 10);
-      int number2 = (int)(Math.random() * 10);
+      int number1 = (int)(Math.random() * 15);
+      int number2 = (int)(Math.random() * 15);
 
       //if number1 < number2 swap number1 with number2
       if(number1 < number2)
@@ -30,7 +30,7 @@ public class SubtractionQuizLoop
       }//end of if loop for placing larger number with smaller number
 
       //prompt the student to answer what is number1 - number2?
-      System.out.println("What is " + number1 + "-" + number2 + " ?");
+      System.out.println("What is " + number1 + " - " + number2 + " ?");
       System.out.print("> ");
       
       int answer = input.nextInt();//user input assinged to answer
@@ -39,6 +39,7 @@ public class SubtractionQuizLoop
       if(number1 - number2 == answer)
       {
         System.out.println("You Are Correct!\n*********************************************\n");
+        correctCount++;//adds 1 to correctCount
       }//end of if loop for display answer
       else
         System.out.println("Your answer is wrong.\n" + number1 + " - " + number2 + " should be " 
@@ -55,7 +56,8 @@ public class SubtractionQuizLoop
     long testTime = endTime - startTime;//time it took to finish test
     
     //prints out your score
-    System.out.println("Correct count is " + correctCount + "\nTest Time is "
+    System.out.println("You got " + correctCount + " out of " + NUMBER_OF_QUESTIONS 
+                       + "\nThe time it took you to complete is "
                       + testTime / 1000 + " seconds\n" + output);
   }//end of main method
 }//end of class
