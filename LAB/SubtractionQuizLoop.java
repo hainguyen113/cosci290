@@ -18,8 +18,8 @@ public class SubtractionQuizLoop
     while(count < NUMBER_OF_QUESTIONS)
     {
       //generate 2 random single digit integers
-      int number1 = (int)(Math.random() * 15);
-      int number2 = (int)(Math.random() * 15);
+      int number1 = 1 + (int)(Math.random() * 15);
+      int number2 = 1 + (int)(Math.random() * 15);
 
       //if number1 < number2 swap number1 with number2
       if(number1 < number2)
