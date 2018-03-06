@@ -30,25 +30,25 @@ public class SubtractionQuizLoop
       }//end of if loop for placing larger number with smaller number
 
       //prompt the student to answer what is number1 - number2?
-      System.out.println("What is " + number1 + " - " + number2 + " ?");
+      System.out.println("What is " + number1 + " + " + number2 + " ?");
       System.out.print("> ");
       
       int answer = input.nextInt();//user input assinged to answer
       
       //grade the answer and display the result
-      if(number1 - number2 == answer)
+      if(number1 + number2 == answer)
       {
         System.out.println("You Are Correct!\n*********************************************\n");
         correctCount++;//adds 1 to correctCount
       }//end of if loop for display answer
       else
-        System.out.println("Your answer is wrong.\n" + number1 + " - " + number2 + " should be " 
-                           + (number1 - number2) + "\n*********************************************\n");
+        System.out.println("Your answer is wrong.\n" + number1 + " + " + number2 + " should be " 
+                           + (number1 + number2) + "\n*********************************************\n");
       //increase the questions count
       count++;
 
-      output += "\n" + number1 + " - " + number2 + " = " + answer 
-             + ((number1 - number2 == answer) ? " correct" : " wrong");
+      output += "\n" + number1 + " + " + number2 + " = " + answer 
+             + ((number1 + number2 == answer) ? " correct" : " wrong");
 
     }//end of while loop
     
