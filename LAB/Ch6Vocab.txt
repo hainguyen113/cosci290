@@ -1,0 +1,44 @@
+actual parameter 205 - Actual parameters are parameters as they appear in function calls. 
+                       Formal parameters are parameters as they appear in function declarations.
+
+ambiguous invocation 221 - Sometimes there are two or more possible matches for the invocation of a method, 
+                           but the compiler cannot determine the best match. 
+                           This is referred to as ambiguous invocation.
+                           Ambiguous invocation causes a compile error
+
+argument 205 -  when a method is invoked, you pass a value to the parameter. 
+                This value is referred to as an actual parameter or argument
+
+divide and conquer 225 - A way of developing a computer program by first describing general functions, 
+                         then breaking each function down into details which are refined in successive 
+                         steps until the whole program is fully defined
+
+formal parameter (i.e., parameter) 205 - The variables defined in the method header
+
+information hiding 225 - The details of the implementation are encapsulated in the
+                         method and hidden from the client who invokes the method
+
+method 204 -  a collection of statements grouped together to perform an operation.
+
+method abstraction 225 - separating the use of a method from its implementation. 
+                         The client can use a method without knowing how it is implemented
+
+method overloading 219 - two methods have the same name but different parameter lists within one class. 
+                         The Java compiler determines which method to use based on the method signature.
+
+method signature 205 - The method name and the parameter list together constitute
+
+modifier 205 - The method name and the parameter list together constitute
+
+parameter 205 - The variables defined in the method header
+
+pass-by-value 212 - When you invoke a method with an argument, 
+the value of the argument is passed to the parameter.
+
+scope of a variable 222 - The scope of a variable defines the section of the code in which the variable is visible
+
+stepwise refinement 225 - to decompose it into subproblems. The subproblems can be further
+                          decomposed into smaller, more manageable problems.
+
+stub 227 - a simple but incomplete version of a method—can be used for the methods waiting to be
+           implemented. The use of stubs enables you to quickly build the framework of the program
