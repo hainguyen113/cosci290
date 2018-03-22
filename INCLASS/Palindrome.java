@@ -5,7 +5,7 @@ public class Palindrome
   /** Main method */
   public static void main(String[] args) 
   {
-    char ans;
+    String ans;
     do
     {
       // Create a Scanner
@@ -32,8 +32,8 @@ public class Palindrome
       else
       System.out.println(s + " is not a palindrome\n\n");
       System.out.print("Do you have another to test?\n> ");
-      ans = input.nextChar();      
+      ans = input.next();      
       
-    }while(ans == 'Y' || ans == 'y');
+    }while(ans.equals("y") || ans.equals("Y"));
   }
 }
