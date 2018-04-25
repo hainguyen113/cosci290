@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class TestWriteFile {
 
-	public void write(String filename, String information) {
+	public void writeFile(String FILENAME, String content) {
     
     //String FILENAME = "testWriting.txt";
 
