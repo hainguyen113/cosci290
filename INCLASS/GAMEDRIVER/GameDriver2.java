@@ -7,12 +7,15 @@ import java.util.*;
 import java.util.Scanner;
 
 //start of class
-public class GameDriver2{
+public class GameDriver2
+{
   //start of main mathod
-  public static void main(String[] args) throws Exception{
+  public static void main(String[] args) throws Exception
+  {
     
    
     TestWriteFile write = new TestWriteFile();
+    SplashArt splash = new SplashArt();
     
     //variable name/decloration assignment expression
     Scanner input = new Scanner(System.in); 
@@ -23,8 +26,10 @@ public class GameDriver2{
     int randomNum = 0;
     int minimum = 1;
     int maximum = 10;    
-      
-    //Splash Screen
+    
+    //Splash screen displayed
+    splash.readFile("StartSplash.txt");
+    /*/Splash Screen
     System.out.println("-------------------------------------------------------------\n\n");
     System.out.println(                                         
                         "     @@@@@@    @@@@@@@  @@@          @@@@@@@@  @@@  \n"
@@ -37,12 +42,14 @@ public class GameDriver2{
                       + "        !:!   :!:       :!:          :!:       :!:  \n"
                       + "    :::: ::    ::: :::   ::           ::        ::  \n"
                       + "    :: : :     :: :: :    :            :         :  \n\n\n");
-    
+    */
     
 //story setup
-    System.out.println("You wake up in a room groggy and disorented. There is another person with you.");
+    System.out.println("You wake up in a room groggy and disorented." 
+                       + "There is another person with you.");
     Thread.sleep(3000);
-    System.out.println("The person looks at you and asks your name?\nType your name and press return.");
+    System.out.println("The person looks at you and asks your name?\n"
+                       + "Type your name and press return.");
     
     System.out.print("> ");
     name = input.next();//character name input
@@ -77,11 +84,13 @@ public class GameDriver2{
     survivors = input.nextInt();//anyone else around
     
     //if else statemant
-    if(survivors >= 1){
+    if(survivors >= 1)
+    {
       System.out.println("Yeah I see somthing about " + survivors + " or so moving shadows.");
       Thread.sleep(3000);
     }
-    else{
+    else
+    {
       System.out.println("You tell " + name2 + "I dont see anyone.");
       Thread.sleep(3000);
     }
@@ -97,10 +106,12 @@ public class GameDriver2{
    
     System.out.println("Oh yeah it is " + namePet + ".");
     Thread.sleep(3000);
-    System.out.println("You walk out with " + name2 + " and her dog " + namePet + " to see if you can find anyone "
+    System.out.println("You walk out with " + name2 + " and her dog " + namePet 
+                       + " to see if you can find anyone "
                       + "that has any answers to your questions.");
     Thread.sleep(3000);
-    System.out.println("\n\nThe light fades away as you and " + name2 + " and " + namePet +" head out to find anyone.");
+    System.out.println("\n\nThe light fades away as you and " + name2 
+                       + " and " + namePet +" head out to find anyone.");
     Thread.sleep(2000);
     
     //random number generator
@@ -108,11 +119,13 @@ public class GameDriver2{
     //System.out.println(randomNum); //testing to see if randomNum gen is working
     //System.out.println("You roll a " + randomNum + ".");
     //live or die?
-    if(randomNum > 5 ){
+    if(randomNum > 5 )
+    {
       System.out.println("You and " + name2 + " find a group heading home, You're SAVED!!!");
       Thread.sleep(2000);
     }
-    else if(randomNum <=5){
+    else if(randomNum <=5)
+    {
       System.out.println("As you walk with " + name2 + " you begin to notice her eyes glowing red "
                         + " you also see her floating as she screams your name" + name + "\n You "
                         + " will never escape my grasp!!!!");
@@ -120,14 +133,14 @@ public class GameDriver2{
       
      
     }
-      System.out.println(" _______  _______  __   __  _______    _______  __   __  _______  ______    __  \n"
+    splash.readFile("EndSplash.txt");
+      /*System.out.println(" _______  _______  __   __  _______    _______  __   __  _______  ______    __  \n"
                      + "|       ||   _   ||  |_|  ||       |  |       ||  | |  ||       ||    _ |  |  | \n"
                      + "|    ___||  |_|  ||       ||    ___|  |   _   ||  |_|  ||    ___||   | ||  |  | \n"
                      + "|   | __ |       ||       ||   |___   |  | |  ||       ||   |___ |   |_||_ |  | \n"
                      + "|   ||  ||       ||       ||    ___|  |  |_|  ||       ||    ___||    __  ||__| \n"
                      + "|   |_| ||   _   || ||_|| ||   |___   |       | |     | |   |___ |   |  | | __  \n"
-                     + "|_______||__| |__||_|   |_||_______|  |_______|  |___|  |_______||___|  |_||__| \n");
+                     + "|_______||__| |__||_|   |_||_______|  |_______|  |___|  |_______||___|  |_||__| \n");*/
     
     }
-    
-  }
+}

@@ -15,7 +15,7 @@ public class TestFileIO{
   public static void main(String[] args){
     
     String currentLine; //hold current line being read in file
-    String filename = "Test.txt"; //hold the relative path of a file
+    String filename = "Text.txt"; //hold the relative path of a file
     
     //trying to open a file to read
     try(BufferedReader br = new BufferedReader(new FileReader(filename))){
