@@ -1,4 +1,4 @@
-/* Hai Nguyen
+/* Hai Nguyen, with Steven help
    CoSci290
    HW 2/15/2018
 */
