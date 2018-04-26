@@ -16,6 +16,7 @@ public class GameDriver2
    
     TestWriteFile write = new TestWriteFile();
     SplashArt splash = new SplashArt();
+    TestFileIO read = new TestFileIO();
     
     //variable name/decloration assignment expression
     Scanner input = new Scanner(System.in); 
@@ -56,6 +57,8 @@ public class GameDriver2
     
     write.writeFile("UserName.txt", name);// write the username into a file
     
+    read.readFile("UserName.txt");
+    
     System.out.println("My Name... oh my name is " + name + ". What's Your's?");
     Thread.sleep(3000);
     System.out.println("She looks no older then 12 she has a necklas on"
@@ -91,7 +94,7 @@ public class GameDriver2
     }
     else
     {
-      System.out.println("You tell " + name2 + "I dont see anyone.");
+      System.out.println("You tell " + name2 + " I dont see anyone.");
       Thread.sleep(3000);
     }
     
