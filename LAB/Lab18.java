@@ -14,7 +14,7 @@ public class Lab18
     //String is a refference type in memory
     //inside [] need to give it a size
     
-    int[5] numbers = {0 + (int)(Math.random() * 5)}; 
+    int[] numbers = {1, 2, 3, 4, 5}; 
     int[] numbers2 = {6, 7, 8, 9, 0};
     
     
