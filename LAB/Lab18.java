@@ -21,8 +21,9 @@ public class Lab18
     for(int i = 0; i < numbers.length; i++)
     {
       //int numbers[] = 0 + (int)(Math.random() * 5);
-    
-      System.out.println(numbers[i] + numbers2[i]);
+    int ans = numbers[i] + numbers2[i];
+      System.out.println("Sum of " + numbers[i] + " + " + numbers2[i]
+                         +  " = " + ans);
       //System.out.println(numbers2[i]);
     }
   }//end of main
