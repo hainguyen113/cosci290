@@ -26,26 +26,35 @@ public class Lab21{
     Scanner input = new Scanner(System.in);
     int row = 0;
     int col = 0;
+    int draw = 0;
     
     System.out.println("Let's play Tic Tac Toe!");
        
     //while there isn't a winner
     while(!gameOver){
       printBoard();
-      System.out.println("It is " + xo + "'s turn. Please enter 0, 1, 2 for row");
-      row = input.nextInt();
-      System.out.println("Please enter 0, 1, 2 for col");
-      col = input.nextInt();
+        System.out.println("It is " + xo + "'s turn. Please enter 0, 1, 2 for row");
+        row = input.nextInt();
+        System.out.println("Please enter 0, 1, 2 for col");
+        col = input.nextInt();
+        draw += 1;
       move(row, col);
       changeXO();
-      if(checkWinner()){
+      //System.out.println(draw);
+      if(checkWinner() || draw == 9){
         gameOver = true;
       }
     }
     printBoard();
     changeXO();
+    
+    if(draw == 9 ){
+      System.out.println("No Winner!!!!");
+    }
+    else{
     System.out.println("The winner is " 
                        + xo + "!");
+    }
   }//end of main method
   
   /*
@@ -111,6 +120,7 @@ public class Lab21{
      else if(board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[1][1] != ' '){
         return true;
      }
+      
    }
     return false;  
   }//end of checkWinner
