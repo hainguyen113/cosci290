@@ -132,6 +132,7 @@ public class Lab22{
        else if(board[0][0]!= ' ' && board[0][0] == board[1][1] && board[0][0] == board[2][2] && board[0][0] == board[3][3] ||
               board[2][0]!= ' ' && board[2][0] == board[1][3] && board[2][0] == board[2][4] && board[2][0] == board[3][5] ||
               board[1][0]!= ' ' && board[1][0] == board[2][1] && board[1][0] == board[1][0] && board[3][2] == board[4][3] ||
+              board[2][2]!= ' ' && board[2][2] == board[3][3] && board[2][2] == board[4][4] && board[2][2] == board[5][5] ||
               board[2][1]!= ' ' && board[2][1] == board[3][2] && board[2][1] == board[4][3] && board[2][1] == board[5][4] ||
               board[1][1]!= ' ' && board[1][1] == board[2][2] && board[1][1] == board[3][3] && board[1][1] == board[4][4] ||
               board[0][1]!= ' ' && board[0][1] == board[1][2] && board[0][1] == board[2][3] && board[0][1] == board[3][4] ||
